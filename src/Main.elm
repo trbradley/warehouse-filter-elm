@@ -4,11 +4,13 @@ import Browser
 import Element exposing (..)
 import Element.Border as Border
 import Element.Events as Events
+import Element.Font as Font
 import Element.Input as Input
 import File exposing (File)
 import File.Select as Select
 import Html exposing (Html)
-import Json.Decode exposing (Decoder, field, map2, string)
+import Json.Decode exposing (Decoder, float, int, string)
+import Json.Decode.Pipeline exposing (required)
 import Task
 
 
@@ -21,39 +23,38 @@ type alias Flags =
 
 
 type alias Model =
-    { warehouses : Warehouse }
+    { warehouses : List Warehouse }
 
 
 type alias Warehouse =
     { id : String
     , name : String
-
-    -- , location : String
-    -- , lat : Float
-    -- , lon : Float
-    -- , rating : Float
-    -- , temperature : String
-    -- , capacity : Int
+    , location : String
+    , lat : Float
+    , lon : Float
+    , rating : Float
+    , temperature : String
+    , capacity : Int
     }
 
 
 init : Flags -> ( Model, Cmd Msg )
 init flags =
-    let
-        model =
-            { warehouses = { id = "", name = "" } }
-    in
-    ( model, Cmd.none )
+    ( { warehouses = [] }, Cmd.none )
 
 
 
 -- VIEW
 
 
+edges =
+    { top = 0, right = 0, bottom = 0, left = 0 }
+
+
 view : Model -> Html Msg
 view model =
     Element.layout [ width fill ] <|
-        column []
+        column [ width fill ]
             [ el [ alignTop ] <|
                 Input.button
                     [ Border.color <| rgb255 0 0 0
@@ -64,8 +65,23 @@ view model =
                     { label = text "Load Warehouse JSON"
                     , onPress = Just JsonRequested
                     }
-            , el [] <| text model.warehouses.name
+            , row [ width fill, centerX, paddingXY 0 20, Font.bold, Font.size 30 ] [ text "Warehouses" ]
+            , column [ width fill, spacing 10 ] <| List.map warehouseRow model.warehouses
             ]
+
+
+warehouseRow : Warehouse -> Element Msg
+warehouseRow warehouse =
+    row [ width fill, centerX, spacing 20, paddingEach { edges | bottom = 5 }, Border.widthEach { edges | bottom = 1 }, Border.color <| rgb 0 0 0 ]
+        [ el [ width <| fillPortion 1 ] <| text warehouse.id
+        , el [ width <| fillPortion 2 ] <| text warehouse.name
+        , el [ width <| fillPortion 1 ] <| text warehouse.location
+        , el [ width <| fillPortion 1 ] <| text <| String.fromFloat warehouse.lat
+        , el [ width <| fillPortion 1 ] <| text <| String.fromFloat warehouse.lon
+        , el [ width <| fillPortion 1 ] <| text <| String.fromFloat warehouse.rating
+        , el [ width <| fillPortion 1 ] <| text warehouse.temperature
+        , el [ width <| fillPortion 1 ] <| text <| String.fromInt warehouse.capacity
+        ]
 
 
 
@@ -91,6 +107,10 @@ update msg model =
             ( { model | warehouses = decodeJson warehouses }, Cmd.none )
 
 
+
+--DECODING
+
+
 requestJson : Cmd Msg
 requestJson =
     Select.file [ "application/json" ] JsonLoaded
@@ -101,21 +121,32 @@ loadJson json =
     Task.perform JsonParsed <| File.toString json
 
 
-decodeJson : String -> Warehouse
+decodeJson : String -> List Warehouse
 decodeJson warehouses =
-    case Json.Decode.decodeString decodeWarehouse warehouses of
+    case Json.Decode.decodeString warehousesDecoder warehouses of
         Ok result ->
             result
 
         Err error ->
-            { id = "", name = "" }
+            []
 
 
-decodeWarehouse : Decoder Warehouse
-decodeWarehouse =
-    map2 Warehouse
-        (field "id" string)
-        (field "name" string)
+warehousesDecoder : Decoder (List Warehouse)
+warehousesDecoder =
+    Json.Decode.list warehouseDecoder
+
+
+warehouseDecoder : Decoder Warehouse
+warehouseDecoder =
+    Json.Decode.succeed Warehouse
+        |> required "id" string
+        |> required "name" string
+        |> required "location" string
+        |> required "lat" float
+        |> required "lon" float
+        |> required "rating" float
+        |> required "temperature" string
+        |> required "capacity_sq_ft" int
 
 
 

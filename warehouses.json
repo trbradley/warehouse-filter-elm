@@ -270,7 +270,7 @@
     "capacity_sq_ft": 73754
   },
   {
-    "id": 67354114,
+    "id": "67354114",
     "name": "Warehouse forty-one",
     "location": "Corby",
     "lat": 52.5,
@@ -490,7 +490,7 @@
     "capacity_sq_ft": 72414
   },
   {
-    "id": 28803925,
+    "id": "28803925",
     "name": "Warehouse eleven",
     "location": "Oundle",
     "lat": 52.47,
