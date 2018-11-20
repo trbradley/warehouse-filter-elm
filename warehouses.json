@@ -1,0 +1,632 @@
+[
+  {
+    "id": "3E431DDF",
+    "name": "Warehouse one",
+    "location": "Leeds",
+    "lat": 53.77,
+    "lon": -1.55,
+    "rating": 0,
+    "temperature": "chilled",
+    "capacity_sq_ft": 32073
+  },
+  {
+    "id": "FDA79DB3",
+    "name": "Warehouse two",
+    "location": "Kilkeel",
+    "lat": 53.35,
+    "lon": -6.26,
+    "rating": 3.3,
+    "temperature": "chilled",
+    "capacity_sq_ft": 26509
+  },
+  {
+    "id": "D92036DF",
+    "name": "Warehouse three",
+    "location": "Northolt",
+    "lat": 51.55,
+    "lon": -0.35,
+    "rating": 2,
+    "temperature": "chilled",
+    "capacity_sq_ft": 51084
+  },
+  {
+    "id": "CD46E80B",
+    "name": "Warehouse five",
+    "location": "Woolwich",
+    "lat": 51.5,
+    "lon": 0.04,
+    "rating": 3,
+    "temperature": "ambient",
+    "capacity_sq_ft": 5049
+  },
+  {
+    "id": "B76A1E54",
+    "name": "Warehouse six",
+    "location": "Colnbrook",
+    "lat": 51.47,
+    "lon": -0.51,
+    "rating": 0,
+    "temperature": "frozen",
+    "capacity_sq_ft": 38308
+  },
+  {
+    "id": "C27C6617",
+    "name": "Warehouse seven",
+    "location": "Rugby",
+    "lat": 52.4,
+    "lon": -1.21,
+    "rating": 5,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 83090
+  },
+  {
+    "id": "56AB7C38",
+    "name": "Warehouse nine",
+    "location": "Houghton Regis",
+    "lat": 51.9,
+    "lon": -0.51,
+    "rating": 3.3,
+    "temperature": "ambient",
+    "capacity_sq_ft": 36651
+  },
+  {
+    "id": "07926DDE",
+    "name": "Warehouse twelve",
+    "location": "Motherwell",
+    "lat": 55.78,
+    "lon": -3.98,
+    "rating": 5,
+    "temperature": "ambient",
+    "capacity_sq_ft": 20971
+  },
+  {
+    "id": "5DFE844D",
+    "name": "Warehouse thirteen",
+    "location": "Edinburgh",
+    "lat": 55.95,
+    "lon": -3.19,
+    "rating": 3.3,
+    "temperature": "ambient",
+    "capacity_sq_ft": 70992
+  },
+  {
+    "id": "B3A5D0C5",
+    "name": "Warehouse ten",
+    "location": "Doncaster",
+    "lat": 53.52,
+    "lon": -1.13,
+    "rating": 4.3,
+    "temperature": "chilled",
+    "capacity_sq_ft": 53698
+  },
+  {
+    "id": "EC480F67",
+    "name": "Warehouse fifteen",
+    "location": "Water Orton",
+    "lat": 52.52,
+    "lon": -1.71,
+    "rating": 3.1,
+    "temperature": "chilled",
+    "capacity_sq_ft": 17047
+  },
+  {
+    "id": "42FD8C28",
+    "name": "Warehouse fourteen",
+    "location": "Curdworth",
+    "lat": 52.53,
+    "lon": -1.76,
+    "rating": 0,
+    "temperature": "frozen",
+    "capacity_sq_ft": 41501
+  },
+  {
+    "id": "72D39518",
+    "name": "Warehouse twenty",
+    "location": "Bonnybridge",
+    "lat": 56,
+    "lon": -3.89,
+    "rating": 4,
+    "temperature": "chilled",
+    "capacity_sq_ft": 86579
+  },
+  {
+    "id": "9CA721FE",
+    "name": "Warehouse nineteen",
+    "location": "Kingswood",
+    "lat": 51.43,
+    "lon": -2.54,
+    "rating": 0,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 73928
+  },
+  {
+    "id": "EB934CEB",
+    "name": "Warehouse twenty-three",
+    "location": "Skellingthorpe",
+    "lat": 53.2,
+    "lon": -0.6,
+    "rating": 1.5,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 27225
+  },
+  {
+    "id": "71F6FDD7",
+    "name": "Warehouse twenty-four",
+    "location": "Liverpool",
+    "lat": 53.44,
+    "lon": -2.93,
+    "rating": 2.7,
+    "temperature": "chilled",
+    "capacity_sq_ft": 31327
+  },
+  {
+    "id": "29202E4D",
+    "name": "Warehouse twenty-five",
+    "location": "Keynsham",
+    "lat": 51.41,
+    "lon": -2.48,
+    "rating": 3,
+    "temperature": "ambient",
+    "capacity_sq_ft": 48143
+  },
+  {
+    "id": "B9CD36F8",
+    "name": "Warehouse thirty-two",
+    "location": "South Luffenham",
+    "lat": 52.61,
+    "lon": -0.6,
+    "rating": 2.9,
+    "temperature": "ambient",
+    "capacity_sq_ft": 17303
+  },
+  {
+    "id": "0C0BA3C9",
+    "name": "Warehouse twenty-nine",
+    "location": "Aylesford",
+    "lat": 51.31,
+    "lon": 0.45,
+    "rating": 4,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 25263
+  },
+  {
+    "id": "9B21204C",
+    "name": "Warehouse twenty-eight",
+    "location": "Earls Barton",
+    "lat": 52.3,
+    "lon": -0.79,
+    "rating": 0,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 46397
+  },
+  {
+    "id": "25D52F57",
+    "name": "Warehouse thirty-three",
+    "location": "Blaby",
+    "lat": 52.57,
+    "lon": -1.18,
+    "rating": 3.1,
+    "temperature": "chilled",
+    "capacity_sq_ft": 17804
+  },
+  {
+    "id": "98314B7A",
+    "name": "Warehouse thirty-four",
+    "location": "Basingstoke",
+    "lat": 51.27,
+    "lon": -1.09,
+    "rating": 3.4,
+    "temperature": "chilled",
+    "capacity_sq_ft": 35378
+  },
+  {
+    "id": "305D92F5",
+    "name": "Warehouse thirty-seven",
+    "location": "Hendon",
+    "lat": 51.57,
+    "lon": -0.23,
+    "rating": 2.1,
+    "temperature": "ambient",
+    "capacity_sq_ft": 14759
+  },
+  {
+    "id": "E8381E72",
+    "name": "Warehouse thirty-eight",
+    "location": "Hale",
+    "lat": 53.35,
+    "lon": -2.87,
+    "rating": 2.5,
+    "temperature": "frozen",
+    "capacity_sq_ft": 74184
+  },
+  {
+    "id": "93ED6E8B",
+    "name": "Warehouse thirty-six",
+    "location": "Halesowen",
+    "lat": 52.45,
+    "lon": -2.05,
+    "rating": 3.8,
+    "temperature": "chilled",
+    "capacity_sq_ft": 92525
+  },
+  {
+    "id": "1359036A",
+    "name": "Warehouse thirty-nine",
+    "location": "Pilsley",
+    "lat": 53.19,
+    "lon": -1.35,
+    "rating": 0,
+    "temperature": "chilled",
+    "capacity_sq_ft": 90905
+  },
+  {
+    "id": "B0B33D27",
+    "name": "Warehouse forty-three",
+    "location": "Harwich",
+    "lat": 51.95,
+    "lon": 1.32,
+    "rating": 3.4,
+    "temperature": "chilled",
+    "capacity_sq_ft": 73754
+  },
+  {
+    "id": 67354114,
+    "name": "Warehouse forty-one",
+    "location": "Corby",
+    "lat": 52.5,
+    "lon": -0.65,
+    "rating": 0,
+    "temperature": "chilled",
+    "capacity_sq_ft": 54396
+  },
+  {
+    "id": "4923AA37",
+    "name": "Warehouse forty-two",
+    "location": "Yaxley",
+    "lat": 52.54,
+    "lon": -0.31,
+    "rating": 3.5,
+    "temperature": "chilled",
+    "capacity_sq_ft": 70601
+  },
+  {
+    "id": "6B2EEFFA",
+    "name": "Warehouse forty-four",
+    "location": "Harwich",
+    "lat": 51.95,
+    "lon": 1.32,
+    "rating": 3,
+    "temperature": "chilled",
+    "capacity_sq_ft": 49669
+  },
+  {
+    "id": "CFC13C50",
+    "name": "Warehouse forty-five",
+    "location": "Longfield",
+    "lat": 51.41,
+    "lon": 0.26,
+    "rating": 3.2,
+    "temperature": "chilled",
+    "capacity_sq_ft": 93512
+  },
+  {
+    "id": "0BAC54E4",
+    "name": "Warehouse forty-seven",
+    "location": "Normandy",
+    "lat": 51.27,
+    "lon": -0.66,
+    "rating": 2.8,
+    "temperature": "ambient",
+    "capacity_sq_ft": 69881
+  },
+  {
+    "id": "6BA1054A",
+    "name": "Warehouse fifty-one",
+    "location": "Wembley",
+    "lat": 51.54,
+    "lon": -0.31,
+    "rating": 2.2,
+    "temperature": "ambient",
+    "capacity_sq_ft": 82029
+  },
+  {
+    "id": "BF862C21",
+    "name": "Warehouse forty-nine",
+    "location": "Helmsley",
+    "lat": 54.23,
+    "lon": -1.05,
+    "rating": 2.5,
+    "temperature": "frozen",
+    "capacity_sq_ft": 13533
+  },
+  {
+    "id": "67ACA7A2",
+    "name": "Warehouse forty-eight",
+    "location": "Sunbury-on-Thames",
+    "lat": 51.42,
+    "lon": -0.42,
+    "rating": 3.4,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 91911
+  },
+  {
+    "id": "25B505A3",
+    "name": "Warehouse forty-six",
+    "location": "Lowestoft",
+    "lat": 51.65,
+    "lon": 7.79,
+    "rating": 3,
+    "temperature": "ambient",
+    "capacity_sq_ft": 82910
+  },
+  {
+    "id": "99C434B8",
+    "name": "Warehouse fifty",
+    "location": "Manchester",
+    "lat": 53.48,
+    "lon": -2.24,
+    "rating": 3.4,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 96989
+  },
+  {
+    "id": "324748A1",
+    "name": "Warehouse fifty-three",
+    "location": "Hardingstone",
+    "lat": 52.22,
+    "lon": -0.86,
+    "rating": 2.8,
+    "temperature": "frozen",
+    "capacity_sq_ft": 39918
+  },
+  {
+    "id": "EF89E8D9",
+    "name": "Warehouse fifty-six",
+    "location": "Clayton-le-Woods",
+    "lat": 53.73,
+    "lon": -2.67,
+    "rating": 3.3,
+    "temperature": "frozen",
+    "capacity_sq_ft": 2591
+  },
+  {
+    "id": "F3A35AA8",
+    "name": "Warehouse fifty-four",
+    "location": "Lutterworth",
+    "lat": 52.46,
+    "lon": -1.24,
+    "rating": 0,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 99548
+  },
+  {
+    "id": "5C6E473F",
+    "name": "Warehouse fifty-five",
+    "location": "Northampton",
+    "lat": 52.26,
+    "lon": -0.95,
+    "rating": 2.7,
+    "temperature": "chilled",
+    "capacity_sq_ft": 7226
+  },
+  {
+    "id": "E7DD86C5",
+    "name": "Warehouse fifty-seven",
+    "location": "Bolton",
+    "lat": 53.6,
+    "lon": -2.44,
+    "rating": 2.8,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 45585
+  },
+  {
+    "id": "3B646346",
+    "name": "Warehouse fifty-eight",
+    "location": "Clayton-le-Woods",
+    "lat": 53.73,
+    "lon": -2.67,
+    "rating": 4,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 58323
+  },
+  {
+    "id": "A78AE49E",
+    "name": "Warehouse four",
+    "location": "Newcastle upon Tyne",
+    "lat": 54.98,
+    "lon": -1.62,
+    "rating": 4.2,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 61204
+  },
+  {
+    "id": "BDB9FBB6",
+    "name": "Warehouse sixty",
+    "location": "Elvington",
+    "lat": 53.92,
+    "lon": -0.96,
+    "rating": 3.2,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 84961
+  },
+  {
+    "id": "477578AA",
+    "name": "Warehouse sixty-two",
+    "location": "Hull",
+    "lat": 53.75,
+    "lon": -0.28,
+    "rating": 3,
+    "temperature": "frozen",
+    "capacity_sq_ft": 17569
+  },
+  {
+    "id": "285F2048",
+    "name": "Warehouse sixty-three",
+    "location": "Selby",
+    "lat": 53.78,
+    "lon": -1.05,
+    "rating": 4,
+    "temperature": "ambient",
+    "capacity_sq_ft": 34831
+  },
+  {
+    "id": "A00E0A7F",
+    "name": "Warehouse sixty-four",
+    "location": "Kirkby",
+    "lat": 53.48,
+    "lon": -2.86,
+    "rating": 2.5,
+    "temperature": "frozen",
+    "capacity_sq_ft": 47968
+  },
+  {
+    "id": "B412E3C4",
+    "name": "Warehouse eight",
+    "location": "Middlewich",
+    "lat": 53.19,
+    "lon": -2.44,
+    "rating": 2,
+    "temperature": "frozen",
+    "capacity_sq_ft": 72414
+  },
+  {
+    "id": 28803925,
+    "name": "Warehouse eleven",
+    "location": "Oundle",
+    "lat": 52.47,
+    "lon": -0.39,
+    "rating": 2.1,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 1676
+  },
+  {
+    "id": "DF3136D6",
+    "name": "Warehouse sixteen",
+    "location": "Aylesford",
+    "lat": 51.31,
+    "lon": 0.45,
+    "rating": 0,
+    "temperature": "chilled",
+    "capacity_sq_ft": 74322
+  },
+  {
+    "id": "B2CA222D",
+    "name": "Warehouse seventeen",
+    "location": "Dudley",
+    "lat": 52.5,
+    "lon": -2.09,
+    "rating": 3,
+    "temperature": "ambient",
+    "capacity_sq_ft": 92454
+  },
+  {
+    "id": "A06DE1C7",
+    "name": "Warehouse twenty-one",
+    "location": "Bathgate",
+    "lat": 55.88,
+    "lon": -3.62,
+    "rating": 3.2,
+    "temperature": "frozen",
+    "capacity_sq_ft": 68350
+  },
+  {
+    "id": "F203BB91",
+    "name": "Warehouse eighteen",
+    "location": "Winsford",
+    "lat": 53.2,
+    "lon": -2.5,
+    "rating": 3.8,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 98115
+  },
+  {
+    "id": "41E767E9",
+    "name": "Warehouse sixty-one",
+    "location": "Stourport-on-Severn",
+    "lat": 52.33,
+    "lon": -2.18,
+    "rating": 3.6,
+    "temperature": "frozen",
+    "capacity_sq_ft": 14787
+  },
+  {
+    "id": "AC7DCF07",
+    "name": "Warehouse twenty-two",
+    "location": "Croft",
+    "lat": 53.43,
+    "lon": -2.52,
+    "rating": 3,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 23133
+  },
+  {
+    "id": "AB3D4A6D",
+    "name": "Warehouse twenty-six",
+    "location": "Wavendon",
+    "lat": 52.04,
+    "lon": -0.68,
+    "rating": 2.8,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 89287
+  },
+  {
+    "id": "BB66E8D4",
+    "name": "Warehouse twenty-seven",
+    "location": "Cannock",
+    "lat": 52.7,
+    "lon": -2.02,
+    "rating": 3,
+    "temperature": "chilled",
+    "capacity_sq_ft": 37503
+  },
+  {
+    "id": "B2E61D10",
+    "name": "Warehouse thirty",
+    "location": "Lowestoft",
+    "lat": 51.34,
+    "lon": 12.39,
+    "rating": 3.6,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 93441
+  },
+  {
+    "id": "8791797D",
+    "name": "Warehouse thirty-five",
+    "location": "Coatbridge",
+    "lat": 55.87,
+    "lon": -4.04,
+    "rating": 5,
+    "temperature": "ambient",
+    "capacity_sq_ft": 92721
+  },
+  {
+    "id": "CC3CC63F",
+    "name": "Warehouse forty",
+    "location": "Corby",
+    "lat": 52.51,
+    "lon": -0.7,
+    "rating": 3.1,
+    "temperature": "not_controlled",
+    "capacity_sq_ft": 85413
+  },
+  {
+    "id": "F55381AF",
+    "name": "Warehouse fifty-two",
+    "location": "Woolwich",
+    "lat": 51.49,
+    "lon": 0.08,
+    "rating": 4.1,
+    "temperature": "chilled",
+    "capacity_sq_ft": 82475
+  },
+  {
+    "id": "52B7434C",
+    "name": "Warehouse fifty-nine",
+    "location": "Ripon",
+    "lat": 54.18,
+    "lon": -1.48,
+    "rating": 3.7,
+    "temperature": "ambient",
+    "capacity_sq_ft": 69470
+  }
+]
